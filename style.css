@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    /* background: linear-gradient(135deg, rgba(0,254,186,0.7) 0%,rgba(0,254,186,0.6) 1%,rgba(0,254,186,0.5) 2%,rgba(3,241,187,0.5) 56%,rgba(91,84,138,0.5) 77%,rgba(91,84,138,0.5) 84%,rgba(91,84,138,0.5) 87%,rgba(91,84,138,0.5) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+body{
+    background: url(./images/pexels-fabianwiktor-994605.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: #000;
+    width: 100%;
+    height: 100vh;
+}
+
+.card{width: 100%;max-width: 400px;background-color: #1b1b1b9f;color: #fff;margin: 20px auto;border-radius: 20px;padding: 40px 35px;text-align: center;align-items: center;}
+.card .search{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.card .search input{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 9px 25px;
+    height: 50px;
+    border-radius: 16px;
+    font-size: 18px;
+    flex: 1;
+    margin-right: 16px;
+}
+.card .search button{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.card .search button img{
+    width: 16px;
+}
+.weather_icon{
+    width: 140px;
+    margin-top: 10px;
+}
+.weather h1{
+     font-size: 60px;
+     font-weight: 500;
+}
+.weather h2{
+    font-size: 29px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0;
+    margin-top: 40px;
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 35px;
+    margin-right: 10px;
+}
+.humidity, .wind{font-size: 25px;margin-top: -6px;}
+.weather{
+    display: none;
+}
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+.title{
+    width: 50%;
+  margin: 0 auto;
+}
+.title h1 {
+    font-family: "Merienda", cursive !important;
+    text-align: center;
+    align-items: center;
+    color: #000;
+    font-size: 17px;
+}
+.yoyo{
+    width: 160px;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+@media (max-width:425px) {
+    
+    .yoyo {
+        width: 125px;
+    }
+    .title h1 {
+       
+        font-size: 13px;
+    }
+    .title {
+        width: 80%;
+       margin: 30px auto;
+       text-align: center;
+
+    }
+    .card {
+      
+max-width: 360px;
+    }.card .search input {
+        border: 0;
+        outline: 0;
+        background-color: #ebfffc;
+        color: #555;
+        padding: 9px 12px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 12px;
+        flex: 1;
+        margin-right: 13px;
+    }.card .search button img {
+        width: 12px;
+    }
+    .weather_icon {
+        width: 100px;
+        
+    }.weather h1 {
+        font-size: 48px;
+       
+    }.details {
+    
+        margin-top: 15px;
+    }.weather h2 {
+        font-size: 23px;
+    
+    }.col img {
+        width: 28px;
+        
+    }.humidity, .wind {
+        font-size: 17px;
+        
+    }
+    .col p{
+        font-size: 14px;
+    }.card {
+
+        padding: 40px 22px;
+       
+    }
+}
